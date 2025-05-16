@@ -1,4 +1,4 @@
-const selectElement = document.querySelectorAll('.landDropdown');
+const dropdowns = document.querySelectorAll('.landDropdown');
 
 dropdowns.forEach(dropdown => {
     Landliste.forEach(land => {
