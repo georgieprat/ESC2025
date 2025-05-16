@@ -11,3 +11,8 @@ html, body {
     font-size: clamp(16px, 2vw, 24px);
     width: 50%;
 }
+
+#Wetteintrag {
+    display: flex;
+    align-items: center;    /* vertical center */
+}
