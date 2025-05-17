@@ -1,4 +1,4 @@
-const scriptURL = "https://script.google.com/macros/s/AKfycbzigiyLLsOpfRb4pn5L8IyUGxruHnWO51eoGZn_ei3qpmIPxs6Y1V7AirsmK08CT3jwbA/exec"; // Replace with the URL you copied
+const scriptURL = "https://script.google.com/macros/s/AKfycbzigiyLLsOpfRb4pn5L8IyUGxruHnWO51eoGZn_ei3qpmIPxs6Y1V7AirsmK08CT3jwbA/exec";
 
   document.getElementById("Inputs").addEventListener("submit", e => {
     e.preventDefault();
