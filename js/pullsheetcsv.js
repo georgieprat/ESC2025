@@ -1,6 +1,6 @@
-export function pullSheetCSV(csvUrl, targetElement) {
-    const response = fetch(csvUrl);
-    const text = response.text();
+export async function pullSheetCSV(csvUrl, targetElement) {
+    const response = await fetch(csvUrl);
+    const text = await response.text();
   
     // CSV in Zeilen aufteilen
     const rows = text.split("\n").map(row => row.split(","));
