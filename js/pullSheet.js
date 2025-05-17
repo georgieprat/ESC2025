@@ -1,4 +1,5 @@
 export function pullSheet(sheetURL,zielListe) {
+    
     fetch(sheetUrl)
         .then(response => response.json())
         .then(data => {
