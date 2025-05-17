@@ -1,4 +1,4 @@
-import { pullSheet } from './pullsheet.js';
+import { pullSheetCSV } from './pullsheetcsv.js';
 
 const liste = document.getElementById("laenderListe");
 
@@ -26,12 +26,11 @@ window.Landliste.forEach(land => {
     liste.appendChild(listItem);
 });
 
-const sheetURL = "https://spreadsheets.google.com/feeds/list/1nUWunpclL0nLo_ZdqosrzCa279Vy_O4qEqkidhSKDhY/public/values?alt=json";
+const sheetURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTcfbhPI6nHlNrHoVPXLQgyYFmHqQXV52Er02JSyE3K6W-zuOE8IZP16Zb6EglVrB0lcpND1C92yN-x/pub?output=csv";
 const zielListe = document.getElementById("sheetDaten");
 
 document.getElementById("ShowSheet").addEventListener("click", async e => {
     console.log("hi")
-    e.preventDefault(); 
-    await pullSheet(sheetURL,zielListe)
+    pullSheetCSV(sheetURL,zielListe)
 });
 
