@@ -29,7 +29,10 @@ window.Landliste.forEach(land => {
 const sheetURL = "https://spreadsheets.google.com/feeds/list/1nUWunpclL0nLo_ZdqosrzCa279Vy_O4qEqkidhSKDhY/od6/public/values?alt=json";
 const zielListe = document.getElementById("sheetDaten");
 
-pullSheet(sheetURL,zielListe)
+document.getElementById("Inputs").addEventListener("submit", e => {
+    //e.preventDefault(); 
+    pullSheet(sheetURL,zielListe)
 
-console.log(zielListe)
+    console.log(zielListe)
+});
 

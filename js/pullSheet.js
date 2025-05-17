@@ -1,6 +1,6 @@
 export function pullSheet(sheetURL,zielListe) {
-    
-    fetch(sheetUrl)
+
+    fetch(sheetURl)
         .then(response => response.json())
         .then(data => {
             const eintraege = data.feed.entry;
