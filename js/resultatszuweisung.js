@@ -26,7 +26,7 @@ window.Landliste.forEach(land => {
     liste.appendChild(listItem);
 });
 
-const sheetURL = "https://spreadsheets.google.com/feeds/list/1nUWunpclL0nLo_ZdqosrzCa279Vy_O4qEqkidhSKDhY/od6/public/values?alt=json";
+const sheetURL = "https://spreadsheets.google.com/feeds/list/1nUWunpclL0nLo_ZdqosrzCa279Vy_O4qEqkidhSKDhY/public/values?alt=json";
 const zielListe = document.getElementById("sheetDaten");
 
 document.getElementById("ShowSheet").addEventListener("click", async e => {
