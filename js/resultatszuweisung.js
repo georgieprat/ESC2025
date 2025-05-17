@@ -30,6 +30,7 @@ const sheetURL = "https://spreadsheets.google.com/feeds/list/1nUWunpclL0nLo_Zdqo
 const zielListe = document.getElementById("sheetDaten");
 
 document.getElementById("ShowSheet").addEventListener("submit", e => {
+    console.log("hi")
     //e.preventDefault(); 
     pullSheet(sheetURL,zielListe)
 
