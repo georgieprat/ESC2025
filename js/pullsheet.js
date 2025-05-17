@@ -17,4 +17,6 @@ export function pullSheet(sheetURL,zielListe) {
         .catch(error => {
             console.error("Fehler beim Laden des Sheets:", error);
         });
+
+        console.log(zielListe)
     } 

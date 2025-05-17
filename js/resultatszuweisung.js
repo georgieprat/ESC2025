@@ -31,9 +31,7 @@ const zielListe = document.getElementById("sheetDaten");
 
 document.getElementById("ShowSheet").addEventListener("submit", e => {
     console.log("hi")
-    //e.preventDefault(); 
+    e.preventDefault(); 
     pullSheet(sheetURL,zielListe)
-
-    console.log(zielListe)
 });
 
