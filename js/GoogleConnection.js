@@ -16,7 +16,7 @@ const scriptURL = "https://script.google.com/macros/s/AKfycbzigiyLLsOpfRb4pn5L8I
     fetch(scriptURL, {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "text/plain"
       },
       body: JSON.stringify(data)
     })
