@@ -17,7 +17,7 @@ const scriptURL = "https://script.google.com/macros/s/AKfycbzigiyLLsOpfRb4pn5L8I
       method: "POST",
       body: JSON.stringify(data),
       headers: {
-        "Content-Type": "text/plain"
+        "Content-Type": "application/json"
       }
     })
     .then(res => res.json())
