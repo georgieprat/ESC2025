@@ -15,10 +15,10 @@ const scriptURL = "https://script.google.com/macros/s/AKfycbzigiyLLsOpfRb4pn5L8I
 
     fetch(scriptURL, {
       method: "POST",
-      body: JSON.stringify(data),
       headers: {
-        "Content-Type": "text/plain"
-      }
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
     })
     .then(res => res.json())
     .then(response => {
@@ -27,6 +27,6 @@ const scriptURL = "https://script.google.com/macros/s/AKfycbzigiyLLsOpfRb4pn5L8I
     })
     .catch(error => {
       console.error("Error:", error);
-      alert("There was an error submitting your form.");
+      alert("Thanks for your submission! ^-^");
     });
   });
