@@ -29,4 +29,5 @@ const scriptURL = "https://script.google.com/macros/s/AKfycbzigiyLLsOpfRb4pn5L8I
       console.error("Error:", error);
       alert("Thanks for your submission! ^-^");
     });
+    
   });
