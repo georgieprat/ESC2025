@@ -1,4 +1,4 @@
-import { pullSheet } from './pullSheet.js';
+import { pullSheet } from './pullsheet.js';
 
 const liste = document.getElementById("laenderListe");
 
