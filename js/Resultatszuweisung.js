@@ -1,3 +1,5 @@
+import { pullSheet } from './pullSheet.js';
+
 const liste = document.getElementById("laenderListe");
 
 window.Landliste.forEach(land => {
@@ -23,3 +25,11 @@ window.Landliste.forEach(land => {
     // Füge den Eintrag zur Liste hinzu
     liste.appendChild(listItem);
 });
+
+const sheetURL = "https://spreadsheets.google.com/feeds/list/1nUWunpclL0nLo_ZdqosrzCa279Vy_O4qEqkidhSKDhY/od6/public/values?alt=json";
+const zielListe = document.getElementById("sheetDaten");
+
+pullSheet(sheetURL,zielListe)
+
+console.log(zielListe)
+
